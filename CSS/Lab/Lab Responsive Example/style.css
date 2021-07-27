@@ -1,0 +1,22 @@
+@media only screen and (max-width:560px) {
+  
+ 
+}
+@media only screen and (min-width:561px) and (max-width:840px){
+    .form{
+        width: 70%;
+     }
+
+}
+@media only screen and (min-width:841px){
+    .form{
+       width: 60%;
+       top: -30%;
+    }
+    .content{
+        width: 60%;
+    }
+  
+   
+}
+        

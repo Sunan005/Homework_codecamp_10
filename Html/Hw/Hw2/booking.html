@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+        .container{
+            position: relative;
+            margin: 5% auto;
+            padding: 20px;
+            width: 400px;
+            height: 500px;
+            border: 1px solid rgb(167, 165, 165);
+        }
+        .row{
+            width: 100%;
+        }
+        input , select{
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 5px;
+        }
+        input , select:focus{
+            outline: none;
+        }
+        [class^='form'] {
+          display:inline-block;
+          margin: 15px 0 0 10px;
+        }
+        [class^=f-1]{
+            margin:5px 5px;
+            padding: 6px 20px;
+            width: 170px;
+            height: 35px;
+        }
+        [class^=f-2]{
+            margin:5px 6px;
+            padding: 6px 20px;
+            width: 125px;
+            height: 20px;
+        }
+        #date-1{
+            background-color: rgb(236, 236, 236); 
+            border: none;
+        }
+        [class^=f-3]{
+            width: 50px;
+            height: 20px;
+        }
+        .fo-5{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 21px 0 15px;
+        }
+        .f-5{
+            margin-top: 20px;
+        }
+        .f-3{
+            margin-top: 10px;
+            height: 30px;
+        }   
+        .f-6{
+            margin-top: 10px;
+            height: 35px;
+            width: 55px;
+        } 
+        .sub{
+            margin: 30px 0 0 15px;
+        }  
+        .submit{
+            background-color: rgb(240, 103, 53);
+            color: #fff;
+            padding: 0.6rem 0.7rem;
+        }
+        .submit:active{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <form action="">
+        <div class="row">
+            
+            <div class="form-1">
+                <label for="Fly1">Flying from:</label>
+                <br>
+                <select id="Fly1" name="air" class="f-1" >
+                    <option value="karachi">Karachi Pakistan</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="South Korea">South Korea</option>
+                </select>
+            </div>
+            <div class="form-2">
+                <label for="Fly2">To:</label>
+                <br>
+                <select id="Fly2" name="air" class="f-1">
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="karachi">Karachi Pakistan</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="South Korea">South Korea</option>
+                </select>
+            </div>
+
+
+            <div class="form-3">
+                <label for="date1">Departing</label>
+                <br>
+                <input type="date" id="date1" name="date1"
+                 value="2021-07-19"
+                 min="2018-01-01" max="2030-12-31" class="f-2">
+            </div>
+            <div class="form-4">
+                <label for="date2">Returning</label>
+                <br>
+                <input type="date" id="date2" name="date2"
+                 class="f-2">
+            </div>
+
+
+           <div class="fo-5">
+            <div class="f-5">
+                <label for="number">Adult</label>
+                <br>
+                <input type="number" id="number" 
+                value="1"
+                min="0"
+                class="f-3">
+            </div>
+            <div class="f-5">
+                <label for="number2">Child</label>
+                <br>
+                <input type="number" id="number2"  
+                value="0"
+                min="0"
+                class="f-3">
+            </div>
+            <div class="f-5">
+                <label for="number3">Infant</label>
+                <br>
+                <input type="number" id="number3"  
+                value="0"
+                min="0"
+                class="f-3">
+            </div>
+            <div class="f-5">
+                <label for="cur" style="color:orangered;">Currency</label>
+                <br>
+                <select id="cur" name="air" class="f-6">
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="HKD">HKD</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+           </div>
+           <div class="sub">
+               <input type="submit" value="SEARCH" class="submit">
+           </div>
+        </div>
+       </form>
+   </div>
+</body>
+</html>

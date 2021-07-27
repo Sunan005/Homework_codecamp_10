@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Itim', cursive ;
+            scroll-behavior: smooth;
+        }
+        body{
+            height: 200vh;
+        }
+        table{
+            border:1px solid gray;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border:1px solid gray;
+            padding: 20px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            color: #fff;
+        }
+
+        .static{
+            position:static;
+            background-color: red;
+        }
+        .relative{
+            background-color: #000;
+            transition: all 10s;
+           
+        }
+        .relative:hover{
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .absolute {
+            top: 600px;
+            position: absolute;
+            background-color: saddlebrown;
+        }
+        .fixed{
+            position:fixed;
+            background-color: slateblue;
+            top: 200px;
+
+        }
+        .sticky{
+            position: sticky;
+            background-color: teal;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><h2>1.position คืออะไร และ มีอะไรบ้าง</h2></td>
+                <td>คือ property ที่ไช้กำหนดหรือจัดตำแหน่งไอเทม มี 5 ประเภทได้แก่ 1.static 2.relative 3.absolute 4.fixed 5.sticky</td>
+            </tr>
+            <tr>
+                <td><h2>2.z-index คืออะไรใช้อย่างไร</h2></td>
+                <td>z-index คือการใช้จัดเรียง elementที่ซ้อนกันและต้องเป็น element ที่ถูกกำหนด position ไว้เท่านั้น
+                    position ก็จะมี position:relative,position:absolute; เป็นต้น</td>
+            </tr>
+            <tr>
+                <td><h2>3.ให้ทำตัวอย่างการใช้ position มาทุก property</h2></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="section">
+        <h1>3.ให้ทำตัวอย่างการใช้ position มาทุก property</h1>
+    </div>
+    <div class="static box">static</div>
+    <div class="relative box">relative</div>
+    <div class="absolute box">absolute</div>
+    <div class="fixed box">fixed</div>
+    <div class="sticky box">sticky</div>
+   
+
+</body>
+</html>

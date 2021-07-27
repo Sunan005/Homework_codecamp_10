@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font Awesome Lap</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            font-family: cursive;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Title */
+        .row{
+            height: 100%;
+            width: 50%;
+            color: #fff;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(rgba(223, 223, 223, 0.103),rgba(255, 241, 249, 0.363)) ,url(img/manu-schwendener-zFEY4DP4h6c-unsplash.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            text-align: center;
+            opacity: 0.85;
+        }
+        .row-title{
+            display: inline-block;
+            border: 3px solid #fff;
+            width: 50%;
+            margin-top: 5rem;
+            padding: 1rem 0;
+        }
+        .row-title-1{
+            margin-top: 10rem;
+            font-size: 2rem;
+        }
+
+        .l-c{
+          
+            width: 50%;
+        }
+
+
+        /* ProFile */
+
+        .profile{
+            background-image: linear-gradient(rgba(223, 223, 223, 0.103),rgba(255, 241, 249, 0.363)) ,url(img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50%;
+        }
+
+        .p-title{
+            text-align: center;
+            padding-top: 20%;
+            color: #fff;
+        }
+
+
+        /* Friend */
+        .friend{
+            background-image: linear-gradient(rgba(223, 223, 223, 0.103),rgba(255, 241, 249, 0.363)) ,url(img/people-2608145_1280.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 50%;
+        }
+
+
+
+        @media only screen and (max-width: 700px) {
+
+            .row-title{
+                margin: 0em;
+                overflow: hidden;
+            }
+            .row-p{
+                overflow: visible;
+            }
+            .row{
+                display: flex;
+                width: 100%;
+                height: 15%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        @media only screen and (max-width: 900px){
+            .container{
+                display: block;
+            }
+            .row{
+                display: flex;
+                width: 100%;
+                height: 25%;
+                align-items: center;
+                justify-content: center;
+            }
+            .row-title{
+                margin: 0 0 0 0.8rem;
+            }
+            .row-title-1{
+                display: none;
+            }
+            .profile{
+                display: block;
+                width: 200%;
+                height: 400px;
+                padding-top: 5rem;
+            }
+            .friend{
+                display: block;
+                width: 200%;
+                height: 400px;
+                padding-top: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+          <h1 class="row-title">Hello World</h1>
+          <h2 class="row-title-1">You only live once, but if you do it right, once is enough.</h2>
+      </div>
+      <div class="l-c">
+        <div class="profile">
+            <h1 class="p-title"><a href="Profile.html" class="p-title">ProFile</a></h1>
+        </div>
+        <div class="friend">
+            <h1 class="p-title"><a href="Friend.html" class="p-title">Friend</a></h1>
+        </div>
+      </div>
+  </div>
+  
+</body>
+</html>

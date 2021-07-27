@@ -1,0 +1,150 @@
+*{
+    margin: 0; padding: 0;box-sizing: border-box;
+    font-family: 'Roboto', sans-serif ,'Kanit', sans-serif;
+}
+body{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.082),rgba(255, 255, 255, 0.247)), url(img/zac-ong-JHN1-mpgXjo-unsplash.jpg);
+    background-size: cover;
+}
+.b{
+    color: #1877f2;
+    cursor: not-allowed;
+}
+.w{
+    color: white;
+}
+.content{
+    height: auto;
+    width: 980px;
+    display: flex;
+    margin: 7vw auto;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row wrap;
+}
+.head{
+    font-size: 20px;
+}
+.form{
+    height:auto;
+    width: 396px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-content: center;
+    margin: 2rem auto;
+}
+.f-1{
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid rgb(236, 236, 236) ;
+    border-radius: 10px;
+    box-shadow: 1px  1px 5px rgb(182, 181, 181);
+    text-align: center;
+
+}
+input[type=submit]{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    background-color: #1877f2;
+}
+input[type=submit]:hover{
+    background-color: #1460c4;
+    cursor: pointer;
+}
+input{
+    border: none;
+    box-shadow: 0 0 0 1px rgb(230, 230, 230);
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    height: 55px;
+    margin: 0.5rem 0;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 0 3px 1px #1877f2;
+}
+a{
+    text-decoration: none;
+}
+.link{
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    color: #1877f2;
+}
+.link>a:hover{
+    border-bottom:1px solid #1877f2 ;
+}
+.link>a:visited{
+    color: #1877f2;
+}
+hr{
+  border: 0.5px solid rgb(228, 228, 228);
+}
+.btn-f{
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 0.4rem 0.8rem;
+    margin: 1.5rem 0 0.5rem 0;
+    color: #fff;
+    background-color:  #42b72a;
+    border: none;
+    border-radius:6px ;
+}
+.btn-f:hover{
+    background-color: #1e8f07;
+    cursor: pointer;
+}
+.nav{
+    margin: 2rem 0;
+}
+.nav *:visited{
+    color: #000;
+}
+.nav p strong a:hover{
+    border-bottom: 1px solid #000;
+}
+.footer{
+    background-color: rgba(255, 255, 255, 0.459);
+}
+.foot{
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+    margin: auto;
+}
+.foot > a{
+    margin-left: 5px;
+}
+.foot > a:visited{
+    color: rgb(255, 255, 255);
+}
+.foot > a:hover{
+    border-bottom:1px solid rgb(255, 255, 255);
+}
+.hr{
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin: 1rem 0;
+}
+.btn-f-f{
+    color:gray;
+    font-size: 20px;
+    padding: 0 0.4rem;
+    
+}
+
+@media only screen and (max-width: 980px){
+    .content{
+
+        text-align: center;
+        width: auto;
+    }
+    .head{
+        margin: auto;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise5-1</title>
+</head>
+<body>
+    <script>
+        alert( null || 2 || undefined );
+        //  2 เพราะมีค่าเป็นtrue
+
+        alert ( alert(1) || 2 || alert(3) );
+        // alert(1)ก่อนแล้วมาจบที่ 2  เพราะมีค่าเป็นtrue
+
+        alert( 1 && null && 2 );
+        // null เพราะเชื่อมด้วย& null is false 
+
+        alert( alert(1) && alert(2) );
+        // alert(1)เพราะ function alertมีค่าเป็นfalse 
+
+          alert( null || 2 && 3 || 4 );
+        // 3 เพราะ && ทำงานก่อน||
+    </script>
+</body>
+</html>

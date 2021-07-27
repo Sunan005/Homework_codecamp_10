@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise5-5</title>
+</head>
+<body>
+    <script>
+
+       let userName = prompt("User Name");
+            
+        if (userName === "Admin") {
+
+                let password = prompt("password");
+
+                if (password === "codecamp#10") {
+                    alert("ยินดีต้อนรับ") 
+
+                } else if (password) {
+                    alert("Wrong password")
+                    
+                }else{
+                    alert("ยกเลิก")
+                };
+                
+
+        } else if (userName) {
+           alert("ผมไม่รู้จักคุณ")
+
+        } else {
+            alert("ยกเลิก")
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container{
+            width: 580px;
+            height: 500px;
+            background-color: rgb(238, 236, 236);
+            margin: 5% auto;
+            border: 1px solid ghostwhite;
+            box-shadow: 1px 1px 5px ;
+        }
+        table{
+            margin-left: 25px;
+        }
+        .button{
+            padding: 0 3px;
+        }
+        .row-1,.row-4{
+            padding: 10px ;
+        }
+        .row-1::after{
+            content: '*';
+            color: red;
+        }
+        .row-2{
+            padding-left: 126px;
+        }
+        .input-1{
+            width: 30px;
+        }
+        .row-3{
+            padding: 15px;
+            border: 1px solid rgb(230, 228, 228);
+            background-color: rgb(248, 247, 247);
+            outline:1px solid rgb(238, 238, 238);
+        }
+        .f-sl{
+            width: 180px;
+            height: 23px;
+        }
+        #St{
+            height: 23px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <table>
+                <tr>
+                    <td class="row-1"><label for="name">Name : </label></td>
+                    <td class="row-2"><input type="text" id="name">
+                        <button class="button" title="Tooltip">?</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="row-1"><label for="tt">Tab Text :</label></td>
+                    <td class="row-2"><input type="text" id="tt">
+                        <button class="button" title="Tooltip">?</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-1"><label for="url">URL :</label></td>
+                    <td class="row-2">
+                    <label for="name">http://www.wizehive.com/webform</label>
+                    <input type="url" class="input-1" id="url"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="row-3">FORM SETUP</td>
+                </tr>
+                <tr>
+                    <td class="row-4"><label for="from">Form:</label></td>
+                    <td class="row-2 ">
+                        <select name="form" id="from" class="f-sl">
+                              <option value=""></option>
+                        </select>
+                        <input type="submit" value="Edit">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-4">Logo:</td>
+                    <td class="row-2">
+                        <label for="logo">no logo uploaded</label>
+                        <input type="submit" value="Upload Logo" >
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-4"><label for="temt">Template Text:</label></td>
+                    <td class="row-2">
+                        <select name="tem" id="temt" class="f-sl">
+                            <option value="English">English</option>
+                        </select>
+                        <input type="submit" value="Edit">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-4"><label for="Rv">Review From:</label></td>
+                    <td class="row-2">
+                        <select name="Rv" id="Rv" class="f-sl">
+                            <option value="Default">Default</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-4"><label for="rt">Review Score:</label></td>
+                    <td class="row-2">
+                        <select name="rt" id="rt" class="f-sl">
+                            <option value="Rating">Rating</option>
+                        </select>
+                        <input type="submit" value="Reload Fields">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-4"><label for="St">Scoring Type:</label></td>
+                    <td class="row-2">
+                        <select name="St" id="St">
+                            <option value="Average">Average</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-4"><label for="ms">Max Score:</label></td>
+                    <td class="row-2"><input type="number" step="0.01" min="0" value="4.00" id="ms"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

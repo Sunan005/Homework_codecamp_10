@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4-3</title>
+</head>
+<body>
+    <script>
+        let score = Number(prompt('คะแนนของคุณ')) ;
+
+        if (score >= 80 && score <=100) {
+            result = `${score} คะแนน คุณได้เกรด A`;
+            
+        } else if (score >= 70 && score <=79 ) {
+            result = `${score} คะแนน คุณได้เกรด B`;
+
+        } else if (score >= 60 && score <=69 ) {
+            result = `${score} คะแนน คุณได้เกรด C`;
+
+        } else if (score >= 50 && score <=59 ) {
+            result = `${score} คะแนน คุณได้เกรด D`;
+
+        } else if (score < 50 ) {
+            result = `${score} คะแนน เสียใจด้วยคุณได้เกรด F`;
+            
+        } else {
+            result =`${score} คะแนน อัฉริยะ`;
+
+        };   
+        alert(result);
+    </script>
+</body>
+</html>

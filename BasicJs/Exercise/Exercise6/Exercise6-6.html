@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise6-6</title>
+</head>
+<body>
+    <!-- 6.ให้เขียนเกมส์ทายตัวเลขสำหรับเล่นสองคน โดย
+      - ให้ผู้เล่นคนแรกพิมพ์เลขใส่ใน prompt ที่อยู่ระหว่าง 1 ถึง 100 โดยไม่ให้ผู้เล่นคนที่สองรู้ว่าตัวเลขเป็นอะไร
+      - และให้ผู้เล่นคนที่สองทายเลขโดยการพิมพ์เลขใส่ใน prompt จนกว่าจะถูก ถ้าไม่ถูก จะต้องบอกด้วยว่าเลขที่ผู้เล่นคนที่สองพิมพ์เข้ามา มากกว่า หรือ น้อยกว่าคำตอบนั้น" -->
+
+
+      <script>
+                         //player1
+
+         let result = 0;
+
+         while (true) {
+
+            let player1 = +prompt("ใส่ตัวเลข 1 - 100 นะ");
+
+              if (player1 > 1 && player1 < 100) {
+
+                  result += player1;
+
+                  break;
+
+              } else {
+                  alert("กรอกตัวเลขให้ถูกต้อง");
+              } 
+              
+         };
+     
+
+                        //  player2
+       
+          while (true) {
+
+            let player2 = +prompt("ลองทายตัวเลขดูจ้า");
+   
+              if (player2 === result) {
+
+                alert("Success");
+                  break ;
+
+                } else if (player2 < result) {
+
+                    alert("น้อยไปนะ");
+
+                }else if (player2 > result){
+
+                    alert("มากไปแล้ว");
+
+                }else {
+                    alert("กรอกตัวเลขให้ถูกต้อง");
+                };
+          };
+      </script>
+</body>
+</html>

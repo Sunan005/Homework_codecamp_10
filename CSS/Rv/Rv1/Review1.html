@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 1rem;
+            font-family: 'Itim', cursive ;
+        }
+        table{
+            border: 1px solid gray;
+            width: 100%;
+        }
+        th,td {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>หัวข้อ</th>
+            <th>คำตอบ</th>
+        </tr>
+        <tr>
+            <td><h2>1.Css Syntax ประกอบด้วยอะไรบ้าง</h2></td>
+            <td>1.selector <br>2.property<br>3.value</td>
+        </tr>
+        <tr>
+            <td><h2>2.การเขียน css มีกี่แบบอะไรบ้าง</h2></td>
+            <td>3.แบบ <br>1.inline <br>2.internal <br>3.external </td>
+        </tr>
+        <tr>
+            <td><h2>3.Selector มีกี่แบบอะไรบ้าง</h2></td>
+            <td>3รูปแบบ <br> 1.elements selector<br> 2. class selector <br>3.id selector <br><b>* universal selector</b> </td>
+        </tr>
+        <tr>
+            <td><h2>Combinator มีกี่แบบอะไรบ้าง</h2></td>
+            <td>4แบบ <br> 1.Descendant Selector <br> 2. Child Selector <br> 3. Adjacent Sibling Selector <br> 4. General Sibling Selector  </td>
+        </tr>
+    </table>
+     <hr>
+    <h1>1.Css Syntax Example</h1>
+
+    <h3>selector{property:value;}</h3>
+    <h3>p =selector color=property red=value</h3>
+    <img src="img/syntax.jpg" alt="">
+    <h2>ผลลัพธ์</h2>
+    <img src="img/red.jpg" alt="">
+    <br><br><hr>
+
+    <h1>2.การเขียน css มี 3 แบบ</h1>
+
+     <h3>1.Inline</h3>
+     <h4>เป็นการกำหนด style เข้าไปใน element โดยตรง</h4>
+     <img src="img/red2.jpg" alt="">
+     <h4>ผลลัพธ์</h4>
+     <img src="img/red.jpg" alt="">
+     <br>
+
+     <h3>2.Internal</h3>
+
+     <h4>เป็นการกำหนด style ในแท็ก head </h4>
+     <img src="img/syntax.jpg" alt="">
+     <h4>ผลลัพธ์.</h4>
+     <img src="img/red.jpg" alt="">
+     <br>
+
+     <h3>3.External</h3>
+     <h4>สำหรับรูปแบบการเขียนในลักษณะ External  จะเป็นรูปแบบที่เราสามารถเขียนโค้ดของ CSS แยกเก็บออกไปเป็นไฟล์เก็บไว้ภายนอกไฟล์เว็บเพจได้</h4>
+     <img src="img/ex.jpg" alt="">
+     <h4>ไฟล์ CSS ที่เราแยกเก็บไว้นี้จะมีนามสกุลไฟล์เป็น *.css เช่น my-style.css เป็นต้น</h4>
+     <img src="img/ex2.jpg" alt="">
+     <h4>โดยที่เราสามารถเรียกใช้ css โดยวิธี Linking style sheet</h4>
+     <img src="img/ex3.jpg" alt="">
+     <h4>ผลลัพธ์</h4>
+     <img src="img/red.jpg" alt="">
+     <hr>
+
+     <h1>Selector มี 3 รูปแบบ</h1>
+     <h3>1.elements selector </h3>
+     <img src="img/syntax.jpg" alt="">
+     <br>
+     <h3>2. class selector</h3>
+     <img src="img/class se.jpg" alt="">
+     <br>
+     <h3>3.id selector</h3>
+     <img src="img/id se.jpg" alt="">
+     <hr>
+
+     <h1>Combinator มี4แบบ</h1>
+     <h3>1.Descendant Selector ('')</h3>
+     <h4>จะเลือก element ที่อยู่ด้านในทั้งหมด เช่นตัวอย่างนี้</h4>
+     <img src="img/combi1.jpg" alt=""><br><br>
+     <img src="img/combi1-1.jpg" alt="">
+     <h3>2. Child Selector (>)</h3>
+     <h4>จะเลือก element ที่อยู่ ด้านใน แต่จะไม่เลือก อันที่อยู่ ด้านในอีกทีนึง</h4>
+     <img src="img/combi2.jpg" alt=""><br><br>
+     <img src="img/combi1-2.jpg" alt="">
+     <h3>3. Adjacent Sibling Selector(+)</h3>
+     <h4>เลือก element ที่อยู่ถัดจากตัวที่เลือก</h4>
+     <img src="img/combi3.jpg" alt=""><br><br>
+     <img src="img/combi3-1.jpg" alt="">
+     <h3>4. General Sibling Selector (~)</h3>
+     <h4>เลือก element ที่อยู่ถัดจากตัวที่เลือก แต่จะไม่เหมือนกับอันที่แล้ว อันนี้จะเลือกทั้งหมด</h4>
+     <img src="img/combi4.jpg" alt=""><br><br>
+     <img src="img/combi4-1.jpg" alt="">
+     <hr>
+</body>
+</html>
