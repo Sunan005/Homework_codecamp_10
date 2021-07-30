@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise10</title>
+</head>
+<body>
+    <script>
+        function draw(n) {
+            
+            for(let row=n ;row<=n;row--){
+                if (row===0){break};
+                     
+
+               for(let col=1;col<n*2;col++){
+                
+                let star1= (col>=n+row || col<=n-row)? "_" : "*";
+
+                document.querySelector("body").innerHTML += `${star1}`;
+
+               }
+               document.querySelector("body").innerHTML += `<br>` ;     
+            }
+        }
+        draw(2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise8-2</title>
+</head>
+<body>
+    <script>
+        function draw(n) {
+
+
+        let star = "";
+
+        for(let row = 0; row<n; row++) {
+
+            star+="*";
+
+        }
+
+        for(let row2 = 0; row2<n; row2++) {
+
+            document.querySelector("body").innerHTML += `${star}<br>`;
+
+        }
+
+
+    }
+draw(5);
+
+
+    </script>
+</body>
+</html>
