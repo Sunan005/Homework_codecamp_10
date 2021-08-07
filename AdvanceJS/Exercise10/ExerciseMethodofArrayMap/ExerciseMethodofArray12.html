@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Method of Array 12</title>
+</head>
+<body>
+    <script>
+
+        const array1 = [
+                { name: "apple", birth: "2000-01-01" },
+                { name: "banana", birth: "1990-10-10" },
+                { name: "watermelon", birth: "1985-12-30" }
+        ];
+
+       const array2 = [];
+
+       array1.map( item => { 
+          let day1 =[];
+          let month = 0;
+       
+          const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+         day1=  item.birth.split("-").reverse() ;
+
+         month = parseInt(day1[1]);
+
+         day1[1] = monthNames[month-1];
+    
+         item = `<tr> <td>${item.name}</td> <td>${item.birth = day1.join(" ")}</td> </tr>`;
+
+         array2.push(item);
+
+      });
+    </script>
+</body>
+</html>

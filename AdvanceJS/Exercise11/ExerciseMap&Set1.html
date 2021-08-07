@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Map & Set 1</title>
+</head>
+<body>
+    <script>
+        let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+
+        function unique(arr) {
+
+                   arr = new Set(arr);
+
+                   arr = Array.from(arr);
+                   return arr;
+        };
+
+        alert( unique(values) );
+    </script>
+</body>
+</html>

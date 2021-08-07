@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Object4</title>
+</head>
+<body>
+    <script>
+        let obj = {
+          A : 1200,
+          B : 1100,
+          C : 1500
+        };
+
+        function sum(obj) {
+            
+          let result = 0;
+
+          for( let key in obj) {
+          result += obj[key];
+          };
+ 
+        return result;     
+        };
+    </script>
+</body>
+</html>

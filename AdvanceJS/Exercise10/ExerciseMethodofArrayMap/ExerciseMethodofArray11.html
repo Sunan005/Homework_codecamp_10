@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Method of Array 11</title>
+</head>
+<body>
+    <script>
+        
+    const array1 = [
+            { name:"apple", birth: "2000-01-01" },
+            { name:"banana", birth: "1990-10-01" },
+            { name:"watermelon", birth: "1985-12-01" },
+    ];
+   
+    let dNow =[2019,11,01];
+    let day1 = [];
+    let day2 = [];
+
+    let age1 =[];
+    let age2 = 0;
+
+    const array2 = [];
+
+    array1.map((item)=>{
+
+      day1 = item.birth.split( "-" );
+
+      for(let i = 0; i < day1.length; i++ ){
+
+        day2[i] =  parseInt( day1[i] );
+
+        age1[i] = dNow[i] - day2[i];
+ 
+    
+      };
+
+      age2 =  ( age1[1] < 0 )? age1[0] - 1  : age1[0] ;
+  
+      item.age = age2;
+
+      array2.push( item );
+
+    });
+
+    </script>
+</body>
+</html>
