@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring 2 </title>
+</head>
+<body>
+    <script>
+
+        let salaries = {
+              "John": 100,
+              "Pete": 300,
+              "Mary": 250
+        };
+         
+        let { John, Pete, Mary } = salaries;
+
+        let topSalaries = (salaries) => {
+
+           return ( Object.keys( salaries ).length === 0 )?  null : console.log( Object.keys( salaries ).find( item => salaries[item] === Math.max(John, Pete, Mary) ) ) ;
+           
+        };
+    </script>
+</body>
+</html>

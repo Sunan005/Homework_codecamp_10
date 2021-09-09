@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSX 3</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+       let arr1 = ["a", "b", "c", "d", "e"];
+
+       let arr2 = [ <p> a </p>,  <p> b </p>,  <p> c </p>, <p> d </p>, <p> e </p>];
+
+       let id = 0;
+
+       ReactDOM.render(
+         <div>
+            {arr1}
+            {arr2}
+            {arr1.map( el => <p key={id++} >{el}</p>)}
+         </div>,
+         document.getElementById("root")
+       );
+
+    </script>
+  </body>
+</html>

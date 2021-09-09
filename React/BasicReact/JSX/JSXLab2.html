@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSX 2</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+    let [str, num, bool, n, un] = ["string", 30, true, null, undefined];
+
+    let arr = ["Sun"];
+
+    let obj = { name: "Sun26" };
+
+    let id = 0;
+
+    ReactDOM.render(
+      <div>
+        {[str, num, bool, n, un].map( el => <p key={id++}>{el}</p>)}
+        <p>{arr}</p>
+        <p>{obj.name}</p>
+      </div>,
+      document.getElementById("root")
+    );
+
+    </script>
+  </body>
+</html>
