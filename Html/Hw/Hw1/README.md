@@ -1,7 +1,7 @@
 # CodeCamp #10
 ## Sunan Thurapha
 
-2. "Homework1
+1. "Homework1
 
    1. สร้างหน้า index.html เป็น homepage 
       - มีภาพที่แสดงความเป็นตัวเอง และ motto ประจำตัว
