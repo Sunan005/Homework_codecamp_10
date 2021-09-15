@@ -1,5 +1,5 @@
 ## CodeCamp#10 ##
-1.Sunan Thurapha
+## Sunan Thurapha
 2. "Lab2 : การหาข้อมูล Tag
     2.1 ค้นหาข้อมูลว่าแท็ก <!doctype> มีหน้าที่อะไร? (5 นาที)
     2.2 ถ้าอยากให้มี tooltip ใน tag นั้นต้องใช้ attribute ใด? (3นาที)
