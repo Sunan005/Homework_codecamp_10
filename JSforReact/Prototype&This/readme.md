@@ -1,7 +1,7 @@
-### CodeCamp #10
-1. Sunan Thurapha
-2. แบบฝึกหัด
-  2.1 ในบรรทัดที่มีเลข 1 2 และ 3 จะได้ค่าออกมาเป็นอะไร
+# CodeCamp #10
+## Sunan thurapha
+1. แบบฝึกหัด
+   1.  ในบรรทัดที่มีเลข 1 2 และ 3 จะได้ค่าออกมาเป็นอะไร
 
     let animal = {
       jumps: null
@@ -11,6 +11,7 @@
       __proto__: animal,
       jumps: true
     };
+    
     alert( rabbit.jumps ); // ? (1)
 
     delete rabbit.jumps;
@@ -21,10 +22,10 @@
 
     alert( rabbit.jumps ); // ? (3)
    
-  2.2 ใช้ __proto__ ในการกำหนด prototype object ดังนี้ 
+   2. ใช้ __proto__ ในการกำหนด prototype object ดังนี้ 
 		pockets → bed → table → head.
   
-  2.3  การเขียนโค๊ดแบบนี้ object ไหนจะเป็นคนได้ property full ไป
+   3.  การเขียนโค๊ดแบบนี้ object ไหนจะเป็นคนได้ property full ไป
 
     let animal = {
       eat() {
@@ -38,7 +39,7 @@
 
     rabbit.eat();
 
-  2.4 การเขียนโค๊ดแบบนี้ กระเพราะจะถูกแชร์กันจะแก้ไขยังไงดี 
+    4. การเขียนโค๊ดแบบนี้ กระเพราะจะถูกแชร์กันจะแก้ไขยังไงดี 
     let hamster = {
       stomach: [],
 

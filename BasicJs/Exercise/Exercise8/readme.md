@@ -1,3 +1,3 @@
-### CodeCamp ##10
-1. Sunan thurapha
-2. Exercise Function
+# CodeCamp #10
+## Sunan thurapha
+ -  Exercise Function

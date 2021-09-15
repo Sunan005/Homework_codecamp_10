@@ -1,6 +1,6 @@
-### CodeCamp ##10
-1. Sunan thurapha
-2. "Exercise Switch Cases
-1.แปลง Code ดังกล่าวเป็น if-else statement
-2.แปลง Code ดังกล่าวเป็น Switch cases
+# CodeCamp #10
+## Sunan thurapha
+1.  "Exercise Switch Cases
+    - แปลง Code ดังกล่าวเป็น if-else statement
+    - แปลง Code ดังกล่าวเป็น Switch cases
 "

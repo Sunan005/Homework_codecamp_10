@@ -1,7 +1,7 @@
-### CodeCamp #10
-1. Sunan Thurapha
-2. แบบฝึกหัด
-  2.1 lab  this มีค่าเป็นอะไร
+# CodeCamp #10
+## Sunan thurapha
+1. แบบฝึกหัด
+  1. lab  this มีค่าเป็นอะไร
     function f() {
         alert( this ); // ?
     }
@@ -10,7 +10,7 @@
     };
     user.g();
      
-   2.2 lab  ผลลัพธ์ที่ได้คืออะไร
+   2. lab  ผลลัพธ์ที่ได้คืออะไร
       function f() {
         alert(this.name);
       }
@@ -19,7 +19,7 @@
     
       f();
     
-   2.3 lab  ค่าของ value ในฟังก์ชันจะเปลี่ยนไปไหมหลังจาก bind
+   3. lab  ค่าของ value ในฟังก์ชันจะเปลี่ยนไปไหมหลังจาก bind
       function sayHi() {
         alert( this.name );
       }

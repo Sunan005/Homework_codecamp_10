@@ -1,6 +1,6 @@
-### CodeCamp ##10
-1. Sunan thurapha
-2. "Lab @media query
+# CodeCamp ##10
+## Sunan thurapha
+1. "Lab @media query
 - ให้ตั้งค่า media query 3 ขนาดหน้าจอ
 ในหน้าจอแบ่งเป็น 3 ส่วน
 1. มีรูปภาพใหญ่กึ่งกลางจอ

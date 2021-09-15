@@ -1,5 +1,5 @@
-## CodeCamp#10 ##
-1.Sunan Thurapha
-2. "Exercise การเขียน Code
-1.แก้ไขการเขียนโค้ดต่อไปนี้
+# CodeCamp #10
+## Sunan thurapha
+1. "Exercise การเขียน Code
+   - แก้ไขการเขียนโค้ดต่อไปนี้
 "
